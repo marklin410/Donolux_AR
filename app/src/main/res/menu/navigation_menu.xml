@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/t1110101"
+        android:icon="@drawable/t111010_1"
+        android:menuCategory="container"
+        android:title="Donolux T111010-1"></item>
+    <item
+        android:id="@+id/w1110452b"
+        android:icon="@drawable/w111045_2bchrome"
+        android:title="W111045 2B Chrome"></item>
+    <item android:id="@+id/w1110471s"
+        android:icon="@drawable/w111047_1snickel"
+        android:title="W111047 1S Nickel"></item>
+</menu>

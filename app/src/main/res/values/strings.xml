@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Donolux_AR</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="t111010_1">Donolux T111010-1</string>
+    <string name="w111045_2bchrome">W111045_2B Chrome</string>
+    <string name="w111047_1s_nickel">W111047_1S_nickel</string>
+
+
+    <array name="icons">
+        <item>@drawable/t111010_1</item>
+        <item>@drawable/w111045_2bchrome</item>
+        <item>@drawable/w111047_1snickel</item>
+    </array>
+</resources>

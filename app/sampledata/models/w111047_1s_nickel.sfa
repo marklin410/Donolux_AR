@@ -1,0 +1,100 @@
+{
+  animations: [
+    {
+      path: 'sampledata/models/w111047_1s_nickel.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'Chrome matte',
+      parameters: [
+        {
+          baseColor: [
+            0.066667000000000004,
+            0.066667000000000004,
+            0.066667000000000004,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'PLAF WHITE',
+      parameters: [
+        {
+          baseColor: [
+            0.74509800000000004,
+            0.74509800000000004,
+            0.74509800000000004,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'Color',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/w111047_1s_nickel.fbx',
+    name: 'w111047_1s_nickel',
+    recenter: 'root',
+  },
+  version: '0.54:2',
+}
