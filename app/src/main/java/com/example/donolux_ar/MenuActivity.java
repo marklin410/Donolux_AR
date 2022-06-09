@@ -9,12 +9,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -30,38 +32,108 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        ActionBar actionBar = getSupportActionBar();
-        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#000000"));
-
-        actionBar.setBackgroundDrawable(colorDrawable);
-
-        recyclerView = findViewById(R.id.mRecyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView = findViewById(R.id.rv_holder);
+        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
 
         adapter = new MenuAdapter(this, getMenuList());
+        TextView desc = findViewById(R.id.desc_text);
+        desc.setText(R.string.series);
         recyclerView.setAdapter(adapter);
 
+    }
+
+    private ArrayList<Model> getTypesList() {
+        models = new ArrayList<>();
+
+        Model model = new Model();
+        model.setTitle("Встраиваемые светильники");
+        model.setImg(R.drawable.vstraivaem);
+        //model.setSubtitle("Серия: LONDON \nЦена: 12553 р.");
+        models.add(model);
+
+        model = new Model();
+        model.setTitle("Накладные светильники");
+        model.setImg(R.drawable.nakladn);
+       // model.setSubtitle("Серия: MUNICH \nЦена: 6236 р.");
+        models.add(model);
+
+        model = new Model();
+        model.setTitle("Подвесные светильники");
+        model.setImg(R.drawable.podvesn);
+        //model.setSubtitle("Серия: CLS \nЦена: 3310 р.");
+        models.add(model);
+
+        model = new Model();
+        model.setTitle("Настенные светильники");
+        model.setImg(R.drawable.nasten);
+        //model.setSubtitle("Серия: CLS \nЦена: 3310 р.");
+        models.add(model);
+
+        model = new Model();
+        model.setTitle("Настольные/напольные светильники");
+        model.setImg(R.drawable.t111022);
+       // model.setSubtitle("Серия: CLS \nЦена: 3310 р.");
+        models.add(model);
+
+        return models;
+    }
+
+    private ArrayList<Model> getSeriesList() {
+        models = new ArrayList<>();
+
+        Model model = new Model();
+        model.setTitle("Saga");
+        model.setImg(R.drawable.saga);
+        //model.setSubtitle("Серия: LONDON \nЦена: 12553 р.");
+        models.add(model);
+
+        model = new Model();
+        model.setTitle("Prague");
+        model.setImg(R.drawable.prague);
+        // model.setSubtitle("Серия: MUNICH \nЦена: 6236 р.");
+        models.add(model);
+
+        model = new Model();
+        model.setTitle("Kaa");
+        model.setImg(R.drawable.kaa);
+        //model.setSubtitle("Серия: CLS \nЦена: 3310 р.");
+        models.add(model);
+
+        model = new Model();
+        model.setTitle("Soho");
+        model.setImg(R.drawable.nasten);
+        //model.setSubtitle("Серия: CLS \nЦена: 3310 р.");
+        models.add(model);
+
+        return models;
     }
 
     private ArrayList<Model> getMenuList() {
         models = new ArrayList<>();
 
         Model model = new Model();
-        model.setTitle("W111045 2B Chrome");
-        model.setImg(R.drawable.w111045_2bchrome);
-        model.setSubtitle("Серия: LONDON \nЦена: 12553 р.");
+        model.setTitle("T111022/1black");
+        model.setImg(R.drawable.t111022);
+        model.setModel3D("t111022.gltf");
+        model.setSubtitle("Стоимость: 11736 р.");
         models.add(model);
 
         model = new Model();
-        model.setTitle("W111047 1S Nickel");
-        model.setImg(R.drawable.w111047_1snickel);
-        model.setSubtitle("Серия: MUNICH \nЦена: 6236 р.");
+        model.setTitle("T111022/2black");
+        model.setImg(R.drawable.t111022_2black);
+        model.setSubtitle("Стоимость: 21592 р.");
         models.add(model);
 
         model = new Model();
-        model.setTitle("Donolux T111010-1");
-        model.setImg(R.drawable.t111010_1);
-        model.setSubtitle("Серия: CLS \nЦена: 3310 р.");
+        model.setTitle("T111022/1white");
+        model.setImg(R.drawable.t111022_1white);
+        model.setSubtitle("Стоимость: 7161 р.");
+        models.add(model);
+
+        model = new Model();
+        model.setTitle("T111022/2white");
+        model.setImg(R.drawable.t111022_2white);
+        model.setSubtitle("Стоимость: 21592 р.");
         models.add(model);
 
         return models;

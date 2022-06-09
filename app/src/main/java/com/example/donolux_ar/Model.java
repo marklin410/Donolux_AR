@@ -4,6 +4,17 @@ public class Model {
 
     private String title, subtitle;
     private int img;
+    String model3D;
+
+
+    public String getModel3D() {
+        return model3D;
+    }
+
+    public void setModel3D(String model3D) {
+        this.model3D = model3D;
+    }
+
 
     public String getTitle() {
         return title;

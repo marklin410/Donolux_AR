@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Donolux_AR</string>
+    <string name="app_name">Donolux Catalog</string>
+    <string name="type_catalog">Типы монтажа</string>
+    <string name="series">Серии</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
 

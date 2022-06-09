@@ -3,19 +3,19 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.0'
-        classpath 'com.google.ar.sceneform:plugin:1.15.0'
+        classpath 'com.android.tools.build:gradle:7.2.1'
+        classpath 'com.google.ar.sceneform:plugin:1.17.1'
     }
 }
 
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         
     }
 }

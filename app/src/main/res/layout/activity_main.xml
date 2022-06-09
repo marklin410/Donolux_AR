@@ -9,9 +9,8 @@
     android:theme="@style/AppTheme">
 
 
-    <fragment
+    <fragment android:name="com.example.donolux_ar.CustomARFragment"
         android:id="@+id/ux_fragment"
-        android:name="com.example.donolux_ar.CustomARFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

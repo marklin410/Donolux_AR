@@ -17,7 +17,7 @@ public class MenuHolder extends RecyclerView.ViewHolder implements View.OnClickL
         super(itemView);
         this.imageView = itemView.findViewById(R.id.icon_iv);
         this.titleTV =itemView.findViewById(R.id.title_tv);
-        this.subtitleTV=itemView.findViewById(R.id.subtitle_tv);
+        //this.subtitleTV=itemView.findViewById(R.id.subtitle_tv);
 
         itemView.setOnClickListener(this);
     }

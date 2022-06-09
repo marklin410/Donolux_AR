@@ -29,16 +29,17 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuHolder> {
     @NonNull
     @Override
     public MenuHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item,null);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.table_item,null);
 
         return new MenuHolder(view);
     }
+
 
     @Override
     public void onBindViewHolder(@NonNull MenuHolder holder, int position) {
 
         holder.titleTV.setText(models.get(position).getTitle());
-        holder.subtitleTV.setText(models.get(position).getSubtitle());
+       // holder.subtitleTV.setText(models.get(position).getSubtitle());
         holder.imageView.setImageResource(models.get(position).getImg());
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,21 +68,9 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuHolder> {
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onItemClickListener(View v, int position) {
-                String title = models.get(position).getTitle();
-                String modelSFB = "";
-                switch (title){
-                    case "Donolux T111010-1":
-                        modelSFB="t111010_1.sfb";
-                        break;
-                    case "W111045 2B Chrome":
-                        modelSFB = "w111045_2bchrome.sfb";
-                        break;
-                    case "W111047 1S Nickel":
-                        modelSFB="w111047_1s_nickel.sfb";
-                        break;
-                }
+                String model3D = models.get(position).getModel3D();
                 Intent intent = new Intent(c, MainActivity.class);
-                intent.putExtra("modelSFB", modelSFB);
+                intent.putExtra("model3D", model3D);
                 c.startActivity(intent);
             }
         });
