@@ -34,12 +34,22 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         recyclerView = findViewById(R.id.rv_holder);
         recyclerView.setLayoutManager(new GridLayoutManager(this,2));
-
-        adapter = new MenuAdapter(this, getMenuList());
         TextView desc = findViewById(R.id.desc_text);
-        desc.setText(R.string.series);
-        recyclerView.setAdapter(adapter);
+            String curMenu = getIntent().getStringExtra("curMenu");
+        if(curMenu == null) curMenu = "Types";
+        switch (curMenu){
+            case "Types":  adapter = new MenuAdapter(this, getTypesList());
+                desc.setText(R.string.type_catalog);
+                break;
+            case "Series":  adapter = new MenuAdapter(this, getSeriesList());
+                desc.setText(R.string.series);
+                break;
+            case "Items":  adapter = new MenuAdapter(this, getMenuList());
+                desc.setText(R.string.items);
+                break;
+        }
 
+        recyclerView.setAdapter(adapter);
     }
 
     private ArrayList<Model> getTypesList() {
@@ -114,7 +124,8 @@ public class MenuActivity extends AppCompatActivity {
         Model model = new Model();
         model.setTitle("T111022/1black");
         model.setImg(R.drawable.t111022);
-        model.setModel3D("t111022.gltf");
+        model.setModel3D("t11022");
+        model.setColor(Color.rgb(10,10,10));
         model.setSubtitle("Стоимость: 11736 р.");
         models.add(model);
 
@@ -122,18 +133,25 @@ public class MenuActivity extends AppCompatActivity {
         model.setTitle("T111022/2black");
         model.setImg(R.drawable.t111022_2black);
         model.setSubtitle("Стоимость: 21592 р.");
+        model.setColor(Color.rgb(10,10,10));
+
         models.add(model);
 
         model = new Model();
         model.setTitle("T111022/1white");
+        model.setModel3D("t11022_white");
         model.setImg(R.drawable.t111022_1white);
         model.setSubtitle("Стоимость: 7161 р.");
+        model.setColor(Color.rgb(255,255,255));
+
         models.add(model);
 
         model = new Model();
         model.setTitle("T111022/2white");
         model.setImg(R.drawable.t111022_2white);
         model.setSubtitle("Стоимость: 21592 р.");
+        model.setColor(Color.rgb(255,255,255));
+
         models.add(model);
 
         return models;
