@@ -1,0 +1,464 @@
+{
+  materials: [
+    {
+      name: 'wire_145028177',
+      parameters: [
+        {
+          baseColorFactor: [
+            0.64883199999999996,
+            0.55646600000000002,
+            0.56584800000000002,
+            1,
+          ],
+        },
+        {
+          baseColor: null,
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: null,
+        },
+        {
+          metallicFactor: 0,
+        },
+        {
+          roughnessFactor: 0.81143799999999999,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: 'wire_008110135',
+      parameters: [
+        {
+          baseColorFactor: [
+            0.64883199999999996,
+            0.49724099999999999,
+            0.43741600000000003,
+            1,
+          ],
+        },
+        {
+          baseColor: null,
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: null,
+        },
+        {
+          metallicFactor: 0,
+        },
+        {
+          roughnessFactor: 0.81143799999999999,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: 'wire_008008136',
+      parameters: [
+        {
+          baseColorFactor: [
+            0.59430000000000005,
+            0.58403099999999997,
+            0.55381599999999997,
+            1,
+          ],
+        },
+        {
+          baseColor: null,
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: null,
+        },
+        {
+          metallicFactor: 0,
+        },
+        {
+          roughnessFactor: 0.81143799999999999,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: 'wire_135006006',
+      parameters: [
+        {
+          baseColorFactor: [
+            0.48167100000000002,
+            0.43173600000000001,
+            0.41060000000000002,
+            1,
+          ],
+        },
+        {
+          baseColor: null,
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: null,
+        },
+        {
+          metallicFactor: 0,
+        },
+        {
+          roughnessFactor: 0.81143799999999999,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: 'wire_196088225',
+      parameters: [
+        {
+          baseColorFactor: [
+            0.64636800000000005,
+            0.55705800000000005,
+            0.67715099999999995,
+            1,
+          ],
+        },
+        {
+          baseColor: null,
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: null,
+        },
+        {
+          metallicFactor: 0,
+        },
+        {
+          roughnessFactor: 0.81143799999999999,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: 'wire_088177027',
+      parameters: [
+        {
+          baseColorFactor: [
+            0.82085399999999997,
+            0.82946399999999998,
+            0.78579900000000003,
+            1,
+          ],
+        },
+        {
+          baseColor: null,
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: null,
+        },
+        {
+          metallicFactor: 0,
+        },
+        {
+          roughnessFactor: 0.81143799999999999,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: 'wire_028089177',
+      parameters: [
+        {
+          baseColorFactor: [
+            0.122173,
+            0.11570900000000001,
+            0.106681,
+            1,
+          ],
+        },
+        {
+          baseColor: null,
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: null,
+        },
+        {
+          metallicFactor: 0,
+        },
+        {
+          roughnessFactor: 0.81143799999999999,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/t11022_white.glb',
+    name: 't11022_white',
+    recenter: 'root',
+  },
+  version: '0.54:2',
+}
